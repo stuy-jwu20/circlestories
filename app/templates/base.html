@@ -12,6 +12,7 @@
     <head>
         <title>{% block title %}TITLE NEEDED{% endblock %} - CircleStories</title>
         <link rel="stylesheet" href="/static/css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
     </head>
     <body>
@@ -19,7 +20,9 @@
             {% block nav %}
                 <!-- Nav -->
                 <p>
-                    <a href="{{ url_for('index') }}">Home</a>
+                  <nav>
+                    <a id="homeButton" href="{{ url_for('index') }}">Home</a>
+                  </nav>
                     {% if "username" in session %}
                     <a href="{{ url_for('logout') }}">Logout</a>
                     {% endif %}
