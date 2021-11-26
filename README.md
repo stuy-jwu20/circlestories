@@ -1,3 +1,5 @@
+# Editors: Crashing Waves: Jonathan Wu (Loki), Roshani Shrestha (Pete)
+
 # CircleStories by CircleTable
 Christopher Liu: Project Manager, Auth, Component Integration<br>
 Yusuf Elsharawy: Story Database Management, Routing<br>
@@ -9,7 +11,7 @@ CircleStories is a collaborative storytelling game. Each user can contribute an
 entry to existing stories or start their own stories. When adding to stories,
 you can only see the latest addition of a story and can only contribute once.
 Each user will be able to read stories they have added to and see how the story
-is continued by others. 
+is continued by others.
 
 ## Launch Codes
 The following instructions assume that you have Python 3.9 and pip already installed.

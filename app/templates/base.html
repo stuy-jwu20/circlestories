@@ -1,4 +1,13 @@
 <!--
+Crashing Waves: Jonathan Wu (Loki), Roshani Shrestha (Pete)
+SoftDev pd2
+K20 -- Throw Some Forking STUYLE On It/Forking Repos/As a duo, we picked a group
+to fork and then added our handmade CSS to their code.
+2021-11-25
+time spent: 1.5 hours
+-->
+
+<!--
     CircleTable -- Christopher Liu, Yusuf Elsharawy, Deven Maheshwari, Naomi Naranjo
     SoftDev
     P00: CircleStories
@@ -22,15 +31,16 @@
                 <p>
                   <nav>
                     <a id="homeButton" href="{{ url_for('index') }}">Home</a>
-                  </nav>
                     {% if "username" in session %}
-                    <a href="{{ url_for('logout') }}">Logout</a>
+                    <a id="logout" href="{{ url_for('logout') }}">Logout</a>
                     {% endif %}
-                </p>
+                  </nav>
             {% endblock %}
+            <div class="bodycontent">
             {% block content %}
                 CONTENT NEEDED
             {% endblock %}
+            </div>
         {% endblock %}
     </body>
 </html>

@@ -1,9 +1,19 @@
+/*
+Crashing Waves: Jonathan Wu (Loki), Roshani Shrestha (Pete)
+SoftDev pd2
+K20 -- Throw Some Forking STUYLE On It/Forking Repos/As a duo, we picked a group
+to fork and then added our handmade CSS to their code.
+2021-11-25
+time spent: 1.5 hours
+*/
+
 body {
   background-color: pink;
   font-family: 'Comfortaa', cursive;
 }
 
-#homeButton {
+#homeButton, #logout {
+  padding: 5px;
   font-size: 30px;
 }
 
@@ -17,12 +27,14 @@ nav {
   align-items: center;
 }
 
+nav:hover {
+  transition: all 0.2s ease;
+  background-color: skyblue;
+}
+
 .bodycontent {
-  display: flex;
-  background-color: red;
   width: 80%;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 }
 
 a {
@@ -32,4 +44,24 @@ a {
 
 a:hover {
   color:gold;
+}
+
+input[type=password], input[type=text] {
+  width: 15%;
+  border: none;
+}
+
+input[type=password]:focus, input[type=text]:focus {
+  transition: all 0.5s ease;
+  background-color:lightgreen;
+}
+
+#createButton {
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
 }
