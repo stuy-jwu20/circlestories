@@ -30,9 +30,9 @@ time spent: 1.5 hours
                 <!-- Nav -->
                 <p>
                   <nav>
-                    <a id="homeButton" href="{{ url_for('index') }}">Home</a>
+                    <a href="{{ url_for('index') }}">Home</a>
                     {% if "username" in session %}
-                    <a id="logout" href="{{ url_for('logout') }}">Logout</a>
+                    <a href="{{ url_for('logout') }}">Logout</a>
                     {% endif %}
                   </nav>
             {% endblock %}
